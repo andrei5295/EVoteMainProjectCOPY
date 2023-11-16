@@ -6,6 +6,7 @@ candidateList = []
 userSet = set()
 # Call this function to login as admin
 def loginAsAdmin(adminList):
+    print("\nEnter Your Credentials")
     name = input("Username: ")
     password = input("Password: ")
     isLoggedIn = False
