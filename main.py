@@ -37,6 +37,8 @@ while True:
         CommonFunctions.viewResult()
         print("")
 
-    else:
-        continue
+    elif choice == "4":
+        sureInput = input("Are you sure you want to exit? [Y/N]: ").lower()
+        if sureInput == "y":
+            break
 
