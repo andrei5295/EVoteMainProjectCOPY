@@ -55,6 +55,7 @@ def loginVoter():
     isLoggedIn = False
     if ageInput >= 18 and idInput == "y":
         print("You Are Qualified To Vote!")
+        print("")
         isLoggedIn = True
     else:
         print("Sorry You Are Not Qualified To Vote.")
@@ -86,6 +87,7 @@ def voteForCaptains():
             continue
     userSet.clear()
 def viewResult():
+    print("")
     print("Captains: ")
     for captain in captainList:
         print(f"\t{captain.name} = {captain.voteCount}")
