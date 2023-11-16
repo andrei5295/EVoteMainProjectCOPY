@@ -3,7 +3,7 @@ mainMenuString = ("\nEVote - Main Menu\n-------------------\n"
           "2. Login as Administrator\n"
           "3. View Results\n4. Exit")
 
-adminMenuString = ("\nEVote - Admin Menu\n1. Register an Administrator\n"
+adminMenuString = ("\nEVote - Admin Menu\n-------------------\n1. Register an Administrator\n"
                         "2. Register a Candidate\n"
                         "3. Back")
 
