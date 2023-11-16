@@ -33,6 +33,7 @@ def registerAdmin(adminList):
 # Register new candidate
 def registerCandidate(candidateList):
     while True:
+        print("Candidate Registration")
         name = input("Name: ")
         position = input("Position: ").lower()
 
