@@ -24,6 +24,7 @@ while True:
             while True:
                 print(ConstantStrings.adminMenuString)
                 choice = input("Select Number: ")
+                print("")
                 if choice == "1":
                     CommonFunctions.registerAdmin(adminList)
                 elif choice == "2":
