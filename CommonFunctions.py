@@ -51,6 +51,7 @@ def registerCandidate(candidateList):
 
 
 def loginVoter():
+    print("")
     ageInput = int(input("Age: "))
     idInput = input("Voter's ID [Y/N]: ").lower()
     isLoggedIn = False
@@ -60,6 +61,7 @@ def loginVoter():
         isLoggedIn = True
     else:
         print("Sorry You Are Not Qualified To Vote.")
+        print("")
     return isLoggedIn
 # def castVote():
 
@@ -96,11 +98,11 @@ def viewResult():
     print("")
     print("Captains: ")
     for obj in sorted(sortedCaptain, key=lambda x: x.voteCount, reverse=True):
-        print(obj.name, obj.voteCount)
+        print(f"{obj.name} = {obj.voteCount}")
     print("")
     print("Councilors: ")
     for obj in sorted(sortedCouncilor, key=lambda x: x.voteCount, reverse=True):
-        print(obj.name, obj.voteCount)
+        print(f"{obj.name} = {obj.voteCount}")
     
     # print("")
     # print("Captains: ")
