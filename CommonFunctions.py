@@ -88,10 +88,24 @@ def voteForCaptains():
             continue
     userSet.clear()
 def viewResult():
+    sortedCaptain = sorted(captainList, key=lambda x: x.name)
+    sortedCouncilor = sorted(councilorList, key=lambda x: x.name)
+
+    print("")
+    print("Here are the electional results!")
     print("")
     print("Captains: ")
-    for captain in captainList:
-        print(f"\t{captain.name} = {captain.voteCount}")
+    for obj in sorted(sortedCaptain, key=lambda x: x.voteCount, reverse=True):
+        print(obj.name, obj.voteCount)
+    print("")
     print("Councilors: ")
-    for councilor in councilorList:
-        print(f"\t{councilor.name} = {councilor.voteCount}")
+    for obj in sorted(sortedCouncilor, key=lambda x: x.voteCount, reverse=True):
+        print(obj.name, obj.voteCount)
+    
+    # print("")
+    # print("Captains: ")
+    # for captain in captainList:
+    #     print(f"\t{captain.name} = {captain.voteCount}")
+    # print("Councilors: ")
+    # for councilor in councilorList:
+    #     print(f"\t{councilor.name} = {councilor.voteCount}")
