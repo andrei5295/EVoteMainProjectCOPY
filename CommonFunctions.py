@@ -20,6 +20,8 @@ def loginAsAdmin(adminList):
 
 # Register new administrator
 def registerAdmin(adminList):
+    print("Administrator Registration")
+    print("--------------------------")
     while True:
         username = input("Enter your username: ")
         password = input("Enter your password: ")
@@ -35,6 +37,7 @@ def registerAdmin(adminList):
 def registerCandidate(candidateList):
     while True:
         print("Candidate Registration")
+        print("----------------------")
         name = input("Name: ")
         position = input("Position: ").lower()
 
@@ -94,8 +97,8 @@ def viewResult():
     sortedCouncilor = sorted(councilorList, key=lambda x: x.name)
 
     print("")
-    print("Here are the electional results!")
-    print("")
+    print("Here are the electoral results!")
+    print("-------------------------------")
     print("Captains: ")
     for obj in sorted(sortedCaptain, key=lambda x: x.voteCount, reverse=True):
         print(f"{obj.name} = {obj.voteCount}")
