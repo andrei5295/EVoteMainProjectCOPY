@@ -38,7 +38,7 @@ def registerCandidate(candidateList):
     while True:
         print("Candidate Registration")
         print("----------------------")
-        name = input("Name: ")
+        name = input("Name: ").upper()
         position = input("Position [Captain/Councilor]: ").lower()
 
         newCandidate = Candidate(name , position)
