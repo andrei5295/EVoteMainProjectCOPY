@@ -101,9 +101,9 @@ def viewResult():
     print("-------------------------------")
     print("Captains: ")
     for obj in sorted(sortedCaptain, key=lambda x: x.voteCount, reverse=True):
-        print(f"{obj.name} = {obj.voteCount}")
+        print(f"\t{obj.name} = {obj.voteCount}")
     print("")
     print("Councilors: ")
     for obj in sorted(sortedCouncilor, key=lambda x: x.voteCount, reverse=True):
-        print(f"{obj.name} = {obj.voteCount}")
+        print(f"\t{obj.name} = {obj.voteCount}")
         
