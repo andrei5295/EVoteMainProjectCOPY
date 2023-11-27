@@ -41,5 +41,6 @@ while True:
     elif choice == "4":
         sureInput = input("Are you sure you want to exit? [Y/N]: ").lower()
         if sureInput == "y":
+            print("Exiting Program")
             break
 
