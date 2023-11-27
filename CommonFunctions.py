@@ -99,11 +99,11 @@ def viewResult():
     print("")
     print("Here are the electoral results!")
     print("-------------------------------")
-    print("Captains: ")
+    print("Captains:      Votes: ")
     for obj in sorted(sortedCaptain, key=lambda x: x.voteCount, reverse=True):
         print(f"\t{obj.name} = {obj.voteCount}")
     print("")
-    print("Councilors: ")
+    print("Councilors:    Votes: ")
     for obj in sorted(sortedCouncilor, key=lambda x: x.voteCount, reverse=True):
         print(f"\t{obj.name} = {obj.voteCount}")
         
