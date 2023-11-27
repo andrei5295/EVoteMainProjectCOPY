@@ -39,7 +39,7 @@ def registerCandidate(candidateList):
         print("Candidate Registration")
         print("----------------------")
         name = input("Name: ")
-        position = input("Position: ").lower()
+        position = input("Position [Captain/Councilor]: ").lower()
 
         newCandidate = Candidate(name , position)
         candidateList.append(newCandidate)
