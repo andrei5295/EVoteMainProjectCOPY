@@ -4,6 +4,7 @@ captainList = []
 councilorList = []
 candidateList = []
 userSet = set()
+
 # Call this function to login as admin
 def loginAsAdmin(adminList):
     print("\nEnter Your Credentials")
@@ -49,7 +50,6 @@ def registerCandidate(candidateList):
         if yesNo != "Y" or "y":
             break
 
-
 def loginVoter():
     print("")
     ageInput = int(input("Age: "))
@@ -63,7 +63,6 @@ def loginVoter():
         print("Sorry You Are Not Qualified To Vote.")
         print("")
     return isLoggedIn
-# def castVote():
 
 def voteForCaptains():
     count = 0
@@ -89,6 +88,7 @@ def voteForCaptains():
         else:
             continue
     userSet.clear()
+    
 def viewResult():
     sortedCaptain = sorted(captainList, key=lambda x: x.name)
     sortedCouncilor = sorted(councilorList, key=lambda x: x.name)
@@ -103,11 +103,4 @@ def viewResult():
     print("Councilors: ")
     for obj in sorted(sortedCouncilor, key=lambda x: x.voteCount, reverse=True):
         print(f"{obj.name} = {obj.voteCount}")
-    
-    # print("")
-    # print("Captains: ")
-    # for captain in captainList:
-    #     print(f"\t{captain.name} = {captain.voteCount}")
-    # print("Councilors: ")
-    # for councilor in councilorList:
-    #     print(f"\t{councilor.name} = {councilor.voteCount}")
+        
