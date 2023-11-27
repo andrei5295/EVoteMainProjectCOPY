@@ -29,7 +29,7 @@ def registerAdmin(adminList):
         newAdmin = Admin(username,password)
         adminList.append(newAdmin)
         print("Registration Successful!")
-        yesNo = input("Register? [Y/N]")
+        yesNo = input("Register Another? [Y/N]")
         if yesNo != "Y":
             break
 
@@ -49,7 +49,7 @@ def registerCandidate(candidateList):
         elif position == "councilor":
             councilorList.append(newCandidate)
         print("Registration Successful!")
-        yesNo = input("Register? [Y/N]")
+        yesNo = input("Register Another? [Y/N]")
         if yesNo != "Y" or "y":
             break
 
